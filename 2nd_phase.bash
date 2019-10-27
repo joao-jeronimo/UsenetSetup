@@ -17,7 +17,8 @@ perl -wc /opt/inn2/etc/cleanfeed/cleanfeed.local
 git add backups
 
 echo "Caso não haja erros, executar:"
-echo "ctlinnd reload filter.perl meow"
+echo "sudo ctlinnd reload filter.perl meow"
+git status
 echo 'git commit -m "New files update"'
 
 

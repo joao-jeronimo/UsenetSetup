@@ -9,6 +9,9 @@
 # understand what it does.
 ######################### IMPORTANT! - READ CAREFULLY ########################
 
+no warnings "once";
+
+
 my @badaspnntps = (
     'PostIT Now',
     'Jobsearch Limited',

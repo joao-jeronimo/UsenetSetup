@@ -10,6 +10,8 @@
 # Please see the LICENSE file in the distribution.
 #
 
+no warnings "once";
+
 # CHANGE THE BELOW SETTING!
 # Directory where cleanfeed.local and the other configuration files live.
 # Set this to undef to not use any external file.
@@ -587,6 +589,7 @@ sub filter_art {
         $state{lines} = ($hdr{__BODY__} =~ tr/\n//);
     };
     $lines = $state{lines}; # TODO Remove after grace period.
+    #$lines if 0;
 
     # Study the message BODY.  This used to be in the local config file but
     # this seems more logical.

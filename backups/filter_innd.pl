@@ -587,6 +587,7 @@ sub filter_art {
         $state{lines} = ($hdr{__BODY__} =~ tr/\n//);
     };
     $lines = $state{lines}; # TODO Remove after grace period.
+    $lines if 0;
 
     # Study the message BODY.  This used to be in the local config file but
     # this seems more logical.
