@@ -14,7 +14,8 @@
 # Directory where cleanfeed.local and the other configuration files live.
 # Set this to undef to not use any external file.
 
-$config_dir = '/usr/local/news/cleanfeed/etc';
+#$config_dir = '/usr/local/news/cleanfeed/etc';
+$config_dir = '/opt/inn2/etc/cleanfeed';
 
 ##############################################################################
 # Server configuration
