@@ -10,6 +10,8 @@
 # Please see the LICENSE file in the distribution.
 #
 
+no warnings "once";
+
 # CHANGE THE BELOW SETTING!
 # Directory where cleanfeed.local and the other configuration files live.
 # Set this to undef to not use any external file.
@@ -39,7 +41,7 @@ sub get_config {
     aggressive => 1,            # set to 0 if your lawyers are paranoid
     maxgroups => 14,            # maximum number of groups in a crosspost
     block_binaries => 1,        # block misplaced binaries
-    block_all_binaries => 0,    # Reject all binary regardless of distribution
+    block_all_binaries => 1,    # Reject all binary regardless of distribution
     block_late_cancels => 0,    # block cancels of rejected articles
     block_user_spamcancels => 1,# reject spam cancels
     block_user_cancels => 0,    # accept only spam cancels
@@ -587,7 +589,7 @@ sub filter_art {
         $state{lines} = ($hdr{__BODY__} =~ tr/\n//);
     };
     $lines = $state{lines}; # TODO Remove after grace period.
-    $lines if 0;
+    #$lines if 0;
 
     # Study the message BODY.  This used to be in the local config file but
     # this seems more logical.

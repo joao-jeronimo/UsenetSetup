@@ -41,7 +41,7 @@ sub get_config {
     aggressive => 1,            # set to 0 if your lawyers are paranoid
     maxgroups => 14,            # maximum number of groups in a crosspost
     block_binaries => 1,        # block misplaced binaries
-    block_all_binaries => 0,    # Reject all binary regardless of distribution
+    block_all_binaries => 1,    # Reject all binary regardless of distribution
     block_late_cancels => 0,    # block cancels of rejected articles
     block_user_spamcancels => 1,# reject spam cancels
     block_user_cancels => 0,    # accept only spam cancels

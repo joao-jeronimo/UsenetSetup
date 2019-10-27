@@ -14,7 +14,7 @@ cp Cleanfeed-git/cleanfeed /opt/inn2/bin/filter/filter_innd.pl
 perl -wc /opt/inn2/bin/filter/filter_innd.pl
 perl -wc /opt/inn2/etc/cleanfeed/cleanfeed.local
 
-git add backups
+git add .
 
 echo "Caso não haja erros, executar:"
 echo "sudo ctlinnd reload filter.perl meow"
