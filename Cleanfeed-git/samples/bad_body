@@ -1,0 +1,10 @@
+######################### IMPORTANT! - READ CAREFULLY ########################
+## Each line of this file needs to be in Perl Regular Expression format.  If
+## you are unaware of this format, you are stongly advised to learn it before
+## modifying this file.  One bad entry could reject all your articles!
+##
+## Articles matching entries in this file will be rejected unconditionally.
+## Use with caution!
+######################### IMPORTANT! - READ CAREFULLY ########################
+
+# There are no default entries in this file

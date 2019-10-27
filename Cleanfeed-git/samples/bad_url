@@ -1,0 +1,12 @@
+######################### IMPORTANT! - READ CAREFULLY ########################
+## Each line of this file needs to be in Perl Regular Expression format.  If
+## you are unaware of this format, you are stongly advised to learn it before
+## modifying this file.  One bad entry could reject all your articles!
+##
+## Entries in this file only match articles where they are prefixed with:
+## http:// or www.
+## When a match happens, the score for the article is adjusted by +5.
+######################### IMPORTANT! - READ CAREFULLY ########################
+
+# On Usenet, adverts for phonesex are very common.
+\S*phonesex\S*\.

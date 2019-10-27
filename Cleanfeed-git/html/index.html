@@ -1,0 +1,102 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+<meta http-equiv="Content-Style-Type" content="text/css2" />
+<meta name="keywords" content="Cleanfeed Usenet INN Filter">
+<title>Cleanfeed</title>
+<link rel="StyleSheet" href="cleanfeed.css" type="text/css">
+<link rel="StyleSheet" href="tables.css" type="text/css">
+</head>
+
+<body>
+<p>
+<a href='index.html'>Home</a>
+</p>
+
+<h1>Cleanfeed - Usenet Filtering</h1>
+<h2>Table Of Contents</h2>
+<table class='toc'>
+<tr>
+<td class='tocleft'>1.</td>
+<td> <a href='install.html'>Installation and Upgrading</a></td>
+<tr>
+<td class='tocleft'>2.</td>
+<td><a href="files.html">Cleanfeed Files Explained</a></td>
+</tr>
+<tr>
+<td class='tocleft'>3.</td>
+<td><a href="config.html">Configuration Parameters</a></td>
+</tr>
+<tr>
+<td class='tocleftind'>3.1.</td>
+<td><a href="regex.html">Regular Expressions</a></td>
+</tr>
+<tr>
+<td class='tocleftind'>3.2.</td>
+<td><a href="groups.html">Newsgroup Counters and Flags</a></td>
+</tr>
+<tr>
+<td class='tocleft'>4.</td>
+<td><a href="bad_hosts_central.html">Global Bad Hosts</a></td>
+</tr>
+<tr>
+<td class='tocleft'>5.</td>
+<td><a href="faq.html">Frequently Asked Questions</a></td>
+</tr>
+</table>
+
+<h2>Overview</h2>
+Cleanfeed is Usenet filter written in Perl.  It is designed to integrate with a
+variety of news applications, although in recent times has been primarily tested
+against <a href="https://www.isc.org/software/inn">INN v2</a>.  In order to use
+it, INN must be compiled with Perl support:
+<table>
+<tr><td>./configure  --with-perl</td></tr>
+</table>
+Perl version 5.8 or later is also strongly recommended.
+
+<h2>History</h2>
+Cleanfeed was originally developed by Jeremy Nixon who maintained it until
+1998.  At that time futher developments were taken on by Marco D'Itri who
+produced the last release in August 2001, with a beta version following in May
+2002.  I produced a couple of updates in December 2007 that were designed to
+address hipcrime type floods that were plaguing some groups I followed at the
+time.  In accordance with Cleanfeed's license, I published these and announced
+them in news.software.nntp.  The announcement is archived <a
+href="http://groups.google.co.uk/group/news.software.nntp/msg/903ccc5ce4e081c1?hl=en">on
+Google Groups</a><br><br>
+This update was met with surprising enthusiasm and resulted in other people
+posting a number of updates and bugfixes that I subsequently included.  From
+that time I've done some other updates and produced these webpages to guide
+newcomers in using Cleanfeed.<br><br>
+I'd like to thank Jeremy and Marco for their work on Cleanfeed and also all the
+regulars of news.software.nntp who have offered encouragement, patches and
+suggestions since I made my first update.  Without all these people, Cleanfeed
+wouldn't be such a useful tool as it is today.
+
+<h2>Assumptions</h2>
+<ul>
+<li>
+It is assumed that the server operator already understands INN to a reasonable
+level and has it installed and running.
+</li>
+<li>
+A basic understanding of Perl will prove valuable in order to customise the
+default Cleanfeed installation.  Customisation is inevitable as no two Usenet
+servers operate with quite the same policies.
+</li>
+<li>
+A good understanding of <a href="http://perldoc.perl.org/perlre.html">Perl
+Regular Expressions</a> is essential before trying to customise the
+installation.  Getting these wrong will result in unwanted behaviour that can
+be very difficult to isolate and rectify.
+</li>
+<li>
+Many of the examples given assume Cleanfeed files have been installed to the
+default locations.  If you've chosen to put them elsewhere then you will need
+to adjust the examples accordingly.
+</li>
+</ul>
+</body>
+</html>
