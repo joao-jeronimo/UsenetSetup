@@ -1,6 +1,7 @@
 
 #export BACKDIR=`mktemp --tmpdir="$HOME" -d`
 export BACKDIR="./backups/"
+mkdir -p "$BACKDIR"
 
 #git clone https://github.com/crooks/cleanfeed.git Cleanfeed-git
 
